@@ -14,8 +14,8 @@ class Newsletter(models.Model):
     name=models.CharField(max_length=250)
     subject=models.CharField(max_length=250)
     body=models.TextField(blank=True, null=True)
-    email=models.ManyToManyField(NewsletterUser)
-    created=models.DateTimeField(auto_now_add=True)
+    email = models.ManyToManyField(NewsletterUser)
+    created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name

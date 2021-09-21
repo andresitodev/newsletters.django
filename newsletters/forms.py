@@ -1,14 +1,14 @@
 from django import forms
-from .models import NewsletterUser
+from .models import Newsletter, NewsletterUser
 
 
-class NewsletterUserSignupForm(forms.ModelForm):
+class NewsletterUserSignUpForm(forms.ModelForm):
     class Meta:
-        models = NewsletterUser
+        model = NewsletterUser
         fields = ['email']
 
 
 class NewsletterCreationForm(forms.ModelForm):
     class Meta:
-        models = Newsletter
-        fields = ['name', 'subject', 'body', 'email']
+        model = Newsletter
+        fields=['name','subject','body','email']
