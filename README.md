@@ -2,11 +2,16 @@
 
 Project created with django 3.2.6 and python 3
 
-# Activate virtual environment
+# Created virtualenv
 
 ``` bash
-cd env
-cd Scripts
+virtualenv env
+```
+
+# Activate virtualenv
+
+``` bash
+cd env/Scripts
 activate
 ```
 
