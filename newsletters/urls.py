@@ -6,8 +6,8 @@ from .views import newsletter_signup, newsletter_unsubscribe, home_newsletters
 app_name="newsletters"
 
 urlpatterns = [
-    path('', home_newsletters, name="home"),
-    path('signup/', newsletter_signup, name="optin"),
+    path('', home_newsletters.as_view(), name="home"),
+    path('signup/', newsletter_signup.as_view(), name="optin"),
     path('unsubscribe/', newsletter_unsubscribe, name='unsubscribe')
 ]
 
